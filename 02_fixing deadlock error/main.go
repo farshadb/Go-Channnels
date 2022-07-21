@@ -8,7 +8,7 @@ import (
 func main() {
 	c := make(chan string)
 
-	// defining a goroutine
+	// defining a goroutine by anonymous function in main function
 	go func() {
 		fmt.Println(time.Now(), "Taking a nap.")
 		time.Sleep(time.Second * 2)
