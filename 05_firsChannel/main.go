@@ -18,9 +18,8 @@ func main() {
 	// Sending channel c as parameter to Print Goroutine 
 
 	go Print(c)
-	b := <- c
+	<- c
     fmt.Println("Printing form main(main also is a goroutine).")
-	fmt.Println("Recieved: ", b)
 
 	
 }
